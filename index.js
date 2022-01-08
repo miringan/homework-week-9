@@ -1,8 +1,14 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const { generateReadMe } = require("./template");
 
 inquirer
   .prompt([
+    {
+      type: "input",
+      message: "What is your name?",
+      name: "name",
+    },
     {
       type: "input",
       message: "What is your GitHub username?",
@@ -27,7 +33,7 @@ inquirer
       type: "list",
       message: "What kind of license should your project have?",
       name: "license",
-      choices: ['MIT', 'Apache', 'BSD', 'GPL', 'Public Domain'],
+      choices: ['MIT', 'Apache', 'BSD', 'GPL'],
     },
     {
         type: "input",
@@ -53,7 +59,7 @@ inquirer
     },
   ])
   .then((data) => {
-    fs.writeFile("generatedREADME.md", JSON.stringify(data), (err) =>
+    fs.writeFile("generatedREADME.md", generateReadMe(data), (err) =>
     err ? console.error(err) : console.log('Success!')
     );
   })
