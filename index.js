@@ -11,6 +11,11 @@ inquirer
     },
     {
       type: "input",
+      message: "What date did you create your project?",
+      name: "creationDate",
+    },
+    {
+      type: "input",
       message: "What is your GitHub username?",
       name: "githubName",
     },
@@ -33,7 +38,7 @@ inquirer
       type: "list",
       message: "What kind of license should your project have?",
       name: "license",
-      choices: ['MIT', 'Apache', 'BSD', 'GPL'],
+      choices: ['MIT', 'Apache', 'BSD 3-Clause', 'GPL'],
     },
     {
         type: "input",
@@ -63,5 +68,3 @@ inquirer
     err ? console.error(err) : console.log('Success!')
     );
   })
-
-// Need to add a template.js file and do module exports.
