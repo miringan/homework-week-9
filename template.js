@@ -1,9 +1,12 @@
+// To export the template
 module.exports = {generateReadMe};
 var licenseText;
 var licenseBadge;
 
+// Function to dynamically write the readme file
 function generateReadMe({name, creationDate, githubName, email, projectName, description, license, dependency, tests, needToKnowUse, needToKnowContributions}) {
     
+    // License selector if statements
     if (license === "MIT") {
         licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
         licenseText = `Copyright 2022 ${name}
@@ -58,7 +61,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.`
     }
-
+    // Code to populate the README with inquirer data.
     return `# ${projectName}
 
 Author: ${name}

@@ -2,8 +2,8 @@
 
 Author: Michael Iringan <br>
 Created: 1/6/22<br>
-Modified: To be filled in later.<br>
-Instructional Video Link: To be filled in later.<br>
+Modified: 1/11/22<br>
+Instructional Video Link: https://watch.screencastify.com/v/gl13IsOM0WvwEGLi8U6B<br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
