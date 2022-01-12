@@ -1,9 +1,9 @@
 # README Generator
 
-Author: Michael Iringan
-Created: 1/6/22
-Modified: To be filled in later.
-Instructional Video Link: To be filled in later.
+Author: Michael Iringan <br>
+Created: 1/6/22<br>
+Modified: To be filled in later.<br>
+Instructional Video Link: To be filled in later.<br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
